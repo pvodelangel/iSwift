@@ -141,6 +141,22 @@
             </objects>
             <point key="canvasLocation" x="-2159.4202898550725" y="93.75"/>
         </scene>
+        <!--Actividades-->
+        <scene sceneID="6Uv-n1-2JA">
+            <objects>
+                <viewController id="N0j-m2-1U7" customClass="ActividadesView" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gg8-OY-vzR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="I0v-ge-r0e"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Actividades" image="laptop" id="a0R-zB-lhs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cjn-rV-qzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="376"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d0x-1m-DEm">
             <objects>
@@ -154,7 +170,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="7n7-hu-4wh" kind="relationship" relationship="viewControllers" id="arQ-nL-QsD"/>
-                        <segue destination="9uH-hm-Ey5" kind="relationship" relationship="viewControllers" id="GGq-Op-dFj"/>
+                        <segue destination="N0j-m2-1U7" kind="relationship" relationship="viewControllers" id="GGq-Op-dFj"/>
                         <segue destination="q8d-jT-8tX" kind="relationship" relationship="viewControllers" id="rY9-sr-Ezl"/>
                     </connections>
                 </tabBarController>
@@ -683,21 +699,12 @@
             </objects>
             <point key="canvasLocation" x="902.89855072463774" y="-429.24107142857139"/>
         </scene>
-        <!--activities-->
-        <scene sceneID="Ju1-aW-WUq">
-            <objects>
-                <viewControllerPlaceholder storyboardName="activities" id="9uH-hm-Ey5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5Te-GE-rib"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eQ5-uL-Djg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="906" y="376"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Qr" width="64" height="64"/>
         <image name="Swift_FESA" width="1275" height="1125"/>
         <image name="favicon" width="135" height="134"/>
+        <image name="laptop" width="32" height="32"/>
         <image name="swift" width="32" height="32"/>
         <image name="user" width="32" height="32"/>
     </resources>

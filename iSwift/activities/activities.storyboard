@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xdj-fn-wAE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="qqd-P9-G3a">
+            <objects>
+                <navigationController id="Xdj-fn-wAE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="OmR-wc-5NK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TUQ-lF-LbU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="N0j-m2-1U7" kind="relationship" relationship="rootViewController" id="OmY-hg-50w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rca-fQ-JwO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="376"/>
+        </scene>
+        <!--Actividades-->
+        <scene sceneID="6Uv-n1-2JA">
+            <objects>
+                <viewController id="N0j-m2-1U7" customClass="ActividadesView" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gg8-OY-vzR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qcu-32-axx">
+                                <rect key="frame" x="0.0" y="88" width="300" height="40"/>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRg-HA-i2h">
+                                <rect key="frame" x="0.0" y="136" width="414" height="176"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="gvl-6P-KkY"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vkp-LV-0oH"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talleres" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELw-9O-amO">
+                                <rect key="frame" x="20" y="335" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="aqL-oC-7bo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="j0C-4c-pUh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clubes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZA-ue-xq6">
+                                <rect key="frame" x="20" y="88" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="JKn-iu-98i"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="qOb-qX-PzO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fac-tp-7ef">
+                                <rect key="frame" x="0.0" y="383" width="414" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="g3c-Im-GOA"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="32l-VZ-tgR"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ELw-9O-amO" firstAttribute="leading" secondItem="qcu-32-axx" secondAttribute="leading" constant="20" id="7Dx-4n-huG"/>
+                            <constraint firstItem="qcu-32-axx" firstAttribute="top" secondItem="I0v-ge-r0e" secondAttribute="top" id="Ab0-FU-gnw"/>
+                            <constraint firstItem="gRg-HA-i2h" firstAttribute="leading" secondItem="qcu-32-axx" secondAttribute="leading" id="CoD-gw-VZp"/>
+                            <constraint firstItem="I0v-ge-r0e" firstAttribute="bottom" secondItem="ELw-9O-amO" secondAttribute="bottom" constant="438" id="FcM-oW-Pm3"/>
+                            <constraint firstItem="ELw-9O-amO" firstAttribute="top" secondItem="gRg-HA-i2h" secondAttribute="bottom" constant="23" id="Ilr-qV-bkf"/>
+                            <constraint firstItem="fZA-ue-xq6" firstAttribute="leading" secondItem="Gg8-OY-vzR" secondAttribute="leadingMargin" id="QcF-px-IPk"/>
+                            <constraint firstItem="ELw-9O-amO" firstAttribute="leading" secondItem="Gg8-OY-vzR" secondAttribute="leading" constant="20" id="UOJ-Ju-3hw"/>
+                            <constraint firstAttribute="trailing" secondItem="gRg-HA-i2h" secondAttribute="trailing" id="gH3-EU-0a6"/>
+                            <constraint firstItem="gRg-HA-i2h" firstAttribute="top" secondItem="fZA-ue-xq6" secondAttribute="bottom" constant="8" symbolic="YES" id="nkV-o6-ghA"/>
+                            <constraint firstItem="I0v-ge-r0e" firstAttribute="trailing" secondItem="qcu-32-axx" secondAttribute="trailing" constant="114" id="uYF-fY-ZUZ"/>
+                            <constraint firstItem="gRg-HA-i2h" firstAttribute="top" secondItem="qcu-32-axx" secondAttribute="bottom" constant="8" symbolic="YES" id="vyr-9l-eL8"/>
+                            <constraint firstItem="fZA-ue-xq6" firstAttribute="top" secondItem="qcu-32-axx" secondAttribute="top" id="wfk-LX-6e7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I0v-ge-r0e"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Actividades" image="laptop" id="a0R-zB-lhs"/>
+                    <navigationItem key="navigationItem" id="1ee-6A-BAQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cjn-rV-qzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905.79710144927549" y="375.66964285714283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="laptop" width="32" height="32"/>
+    </resources>
+</document>

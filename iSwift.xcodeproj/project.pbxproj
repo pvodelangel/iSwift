@@ -23,6 +23,7 @@
 		C665D0BF238714D100B05694 /* iSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665D0BE238714D100B05694 /* iSwiftUITests.swift */; };
 		C6C5E50C2388618E00EC28B6 /* QRCodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C5E50B2388618E00EC28B6 /* QRCodeScannerController.swift */; };
 		C6C5E50E238861CE00EC28B6 /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C5E50D238861CE00EC28B6 /* QRCodeScannerViewController.swift */; };
+		C6C5E5102388661200EC28B6 /* activities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C5E50F2388661200EC28B6 /* activities.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		C665D0C0238714D100B05694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6C5E50B2388618E00EC28B6 /* QRCodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerController.swift; sourceTree = "<group>"; };
 		C6C5E50D238861CE00EC28B6 /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		C6C5E50F2388661200EC28B6 /* activities.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = activities.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		C665D09B238714CF00B05694 /* iSwift */ = {
 			isa = PBXGroup;
 			children = (
+				C6C5E5112388661900EC28B6 /* activities */,
 				C626266E23885937007CC6D7 /* QRCode */,
 				C65A7CCD23871C9F00662601 /* Base */,
 				C665D09C238714CF00B05694 /* AppDelegate.swift */,
@@ -167,6 +170,14 @@
 				C665D0C0238714D100B05694 /* Info.plist */,
 			);
 			path = iSwiftUITests;
+			sourceTree = "<group>";
+		};
+		C6C5E5112388661900EC28B6 /* activities */ = {
+			isa = PBXGroup;
+			children = (
+				C6C5E50F2388661200EC28B6 /* activities.storyboard */,
+			);
+			path = activities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +287,7 @@
 				C665D0A9238714D000B05694 /* LaunchScreen.storyboard in Resources */,
 				C665D0A6238714D000B05694 /* Assets.xcassets in Resources */,
 				C626267023885947007CC6D7 /* QRCode.storyboard in Resources */,
+				C6C5E5102388661200EC28B6 /* activities.storyboard in Resources */,
 				C65A7CC223871BBA00662601 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
