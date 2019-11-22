@@ -10,6 +10,8 @@
 		80161D30238846D80087F645 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80161D2F238846D80087F645 /* PerfilView.swift */; };
 		80161D3223884A0C0087F645 /* ActividadesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80161D3123884A0C0087F645 /* ActividadesView.swift */; };
 		80161D3423884A220087F645 /* iOSLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80161D3323884A220087F645 /* iOSLabView.swift */; };
+		806AE0F423887001002E94A2 /* RegistroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806AE0F323887001002E94A2 /* RegistroTableViewController.swift */; };
+		806AE0FA23887AFD002E94A2 /* RegisterMasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806AE0F923887AFD002E94A2 /* RegisterMasterTableViewCell.swift */; };
 		80C9429623873768002861CD /* SingUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C9429523873768002861CD /* SingUpView.swift */; };
 		80C942982387419D002861CD /* InicioDeSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C942972387419D002861CD /* InicioDeSesionView.swift */; };
 		C626267023885947007CC6D7 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C626266F23885947007CC6D7 /* QRCode.storyboard */; };
@@ -46,6 +48,8 @@
 		80161D2F238846D80087F645 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		80161D3123884A0C0087F645 /* ActividadesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActividadesView.swift; sourceTree = "<group>"; };
 		80161D3323884A220087F645 /* iOSLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSLabView.swift; sourceTree = "<group>"; };
+		806AE0F323887001002E94A2 /* RegistroTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroTableViewController.swift; sourceTree = "<group>"; };
+		806AE0F923887AFD002E94A2 /* RegisterMasterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMasterTableViewCell.swift; sourceTree = "<group>"; };
 		80C9429523873768002861CD /* SingUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpView.swift; sourceTree = "<group>"; };
 		80C942972387419D002861CD /* InicioDeSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioDeSesionView.swift; sourceTree = "<group>"; };
 		C626266F23885947007CC6D7 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				C65A7CC123871BBA00662601 /* Main.storyboard */,
+				806AE0F323887001002E94A2 /* RegistroTableViewController.swift */,
+				806AE0F923887AFD002E94A2 /* RegisterMasterTableViewCell.swift */,
 				80161D3123884A0C0087F645 /* ActividadesView.swift */,
 				80161D3323884A220087F645 /* iOSLabView.swift */,
 				80161D2F238846D80087F645 /* PerfilView.swift */,
@@ -302,12 +308,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C9429623873768002861CD /* SingUpView.swift in Sources */,
+				806AE0FA23887AFD002E94A2 /* RegisterMasterTableViewCell.swift in Sources */,
 				C665D09D238714CF00B05694 /* AppDelegate.swift in Sources */,
 				C626267A23885E5F007CC6D7 /* QRCodeViewController.swift in Sources */,
 				C6C5E50C2388618E00EC28B6 /* QRCodeScannerController.swift in Sources */,
 				80161D3223884A0C0087F645 /* ActividadesView.swift in Sources */,
 				80161D30238846D80087F645 /* PerfilView.swift in Sources */,
 				80161D3423884A220087F645 /* iOSLabView.swift in Sources */,
+				806AE0F423887001002E94A2 /* RegistroTableViewController.swift in Sources */,
 				C6C5E50E238861CE00EC28B6 /* QRCodeScannerViewController.swift in Sources */,
 				C665D09F238714CF00B05694 /* SceneDelegate.swift in Sources */,
 				80C942982387419D002861CD /* InicioDeSesionView.swift in Sources */,
