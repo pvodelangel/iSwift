@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vuT-9N-SV4">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="bzg-AP-6Ox">
+            <objects>
+                <navigationController id="cvF-wq-U42" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="desktopcomputer" catalog="system" id="KF3-hA-qJW">
+                        <color key="badgeColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="uj2-dq-TEJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="106"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="50"/>
+                            <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OrN-ir-kIh" kind="relationship" relationship="rootViewController" id="VaU-Ga-RTi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVb-QI-uXa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="545"/>
+        </scene>
+        <!--OpenLab-->
+        <scene sceneID="Aui-rj-8vk">
+            <objects>
+                <navigationController id="vuT-9N-SV4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="OpenLab" image="qrcode" catalog="system" id="d9I-fA-lFh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="rOZ-5p-uRk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="97"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="40"/>
+                            <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2gu-YZ-4vf" kind="relationship" relationship="rootViewController" id="cai-qP-fZa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRp-Iy-rQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-91" y="1285"/>
+        </scene>
+        <!--OpenLab-->
+        <scene sceneID="ZOP-b7-0XT">
+            <objects>
+                <viewController id="2gu-YZ-4vf" customClass="QRCodeScannerViewController" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AfI-LZ-BUC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="jLD-Ho-kKe">
+                                <rect key="frame" x="57" y="301" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="XsM-l0-2en"/>
+                                    <constraint firstAttribute="height" constant="300" id="agX-6Q-M9I"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnG-Ed-hch">
+                                <rect key="frame" x="50" y="662" width="314" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B66-tf-Hzg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="Scann">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ggh-PU-Ys1" kind="show" id="c46-EM-qhy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QUo-li-gtt" firstAttribute="trailing" secondItem="PnG-Ed-hch" secondAttribute="trailing" constant="50" id="8OU-nc-gaw"/>
+                            <constraint firstItem="QUo-li-gtt" firstAttribute="bottom" secondItem="PnG-Ed-hch" secondAttribute="bottom" constant="101" id="Nhz-le-DZj"/>
+                            <constraint firstItem="jLD-Ho-kKe" firstAttribute="centerY" secondItem="AfI-LZ-BUC" secondAttribute="centerY" constant="3" id="QFj-9o-Qd7"/>
+                            <constraint firstItem="jLD-Ho-kKe" firstAttribute="centerX" secondItem="AfI-LZ-BUC" secondAttribute="centerX" id="iUc-aW-DrT"/>
+                            <constraint firstItem="PnG-Ed-hch" firstAttribute="leading" secondItem="QUo-li-gtt" secondAttribute="leading" constant="50" id="oct-xz-SIP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QUo-li-gtt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="OpenLab" id="173-wu-MJJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afs-YR-jdV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="1284"/>
+        </scene>
+        <!--Code Sanner Controller-->
+        <scene sceneID="5PQ-p8-F89">
+            <objects>
+                <viewController id="ggh-PU-Ys1" customClass="QRCodeSannerController" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vln-mx-RqA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fPk-Sh-wAK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8af-fY-u8G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7B-ui-nyf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768" y="1284"/>
+        </scene>
+        <!--OpenLab-->
+        <scene sceneID="Ng9-Hn-7Oa">
+            <objects>
+                <viewController id="OrN-ir-kIh" customClass="QRCodeViewController" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r25-yc-GC2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2x-hT-H1f">
+                                <rect key="frame" x="50" y="703" width="314" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="JwY-MN-p1H"/>
+                                    <constraint firstAttribute="height" constant="50" id="e2z-Uy-TKw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="29"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Generate">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="performButtonAction:" destination="OrN-ir-kIh" eventType="touchUpInside" id="OM8-Fo-9Bt"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RbT-mu-F8w">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="1sM-bA-GTd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="hh1-XZ-EeU"/>
+                                    <constraint firstAttribute="height" constant="300" id="izx-rH-hfC"/>
+                                    <constraint firstAttribute="width" constant="300" id="t5R-97-n72"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="F2x-hT-H1f" firstAttribute="leading" secondItem="HB5-MJ-N7D" secondAttribute="leading" constant="50" id="27Y-uo-pUh"/>
+                            <constraint firstItem="RbT-mu-F8w" firstAttribute="centerY" secondItem="r25-yc-GC2" secondAttribute="centerY" id="333-1h-SXv"/>
+                            <constraint firstItem="F2x-hT-H1f" firstAttribute="centerX" secondItem="r25-yc-GC2" secondAttribute="centerX" id="R6c-AF-ERR"/>
+                            <constraint firstItem="RbT-mu-F8w" firstAttribute="centerX" secondItem="r25-yc-GC2" secondAttribute="centerX" id="Z10-g9-ta4"/>
+                            <constraint firstItem="HB5-MJ-N7D" firstAttribute="bottom" secondItem="F2x-hT-H1f" secondAttribute="bottom" constant="60" id="dQS-p7-3G1"/>
+                            <constraint firstItem="HB5-MJ-N7D" firstAttribute="trailing" secondItem="F2x-hT-H1f" secondAttribute="trailing" constant="50" id="ggD-Q5-Ij5"/>
+                            <constraint firstItem="RbT-mu-F8w" firstAttribute="centerX" secondItem="r25-yc-GC2" secondAttribute="centerX" id="md9-NV-oyd"/>
+                            <constraint firstItem="RbT-mu-F8w" firstAttribute="centerX" secondItem="r25-yc-GC2" secondAttribute="centerX" id="t5Z-W8-Rtp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HB5-MJ-N7D"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="OpenLab" id="ntu-kj-9m6"/>
+                    <connections>
+                        <outlet property="qRGenerateButton" destination="F2x-hT-H1f" id="JGZ-hY-8UI"/>
+                        <outlet property="qRGeneratedImage" destination="RbT-mu-F8w" id="ga7-KA-7NE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orU-yU-o4m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="544"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="desktopcomputer" catalog="system" width="64" height="50"/>
+        <image name="qrcode" catalog="system" width="64" height="56"/>
+        <image name="qrcode" width="1160" height="1160"/>
+    </resources>
+    <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

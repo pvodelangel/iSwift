@@ -628,7 +628,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Código QR" image="Qr" id="HN2-Ey-kUs">
                             <color key="tintColor" red="0.94117647059999998" green="0.54117647059999996" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="IfE-jm-82I" kind="show" id="HwL-vg-5FN"/>
+                                <segue destination="YDV-F0-RMs" kind="show" id="T0k-JA-Nfh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -649,6 +649,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xl-cp-KmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1813.0434782608697" y="-429.24107142857139"/>
+        </scene>
+        <!--QRCode-->
+        <scene sceneID="uiV-c3-jGv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QRCode" id="YDV-F0-RMs" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="He5-co-tY8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zz-aD-hr4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2269" y="-985"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cnx-99-cUv">
