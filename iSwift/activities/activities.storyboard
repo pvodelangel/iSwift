@@ -62,12 +62,6 @@
                                     <constraint firstAttribute="width" constant="240" id="fYb-pf-gm8"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espacio en el que los alumnos pueden aprender de forma autodidacta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVF-LL-uiE">
-                                <rect key="frame" x="317" y="690" width="533.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Lab" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic8-4g-Y9q">
                                 <rect key="frame" x="20" y="580" width="300" height="40"/>
                                 <constraints>
@@ -109,10 +103,8 @@
                             <constraint firstItem="ELw-9O-amO" firstAttribute="leading" secondItem="Gg8-OY-vzR" secondAttribute="leading" constant="20" id="UOJ-Ju-3hw"/>
                             <constraint firstAttribute="bottom" secondItem="ic8-4g-Y9q" secondAttribute="bottom" constant="276" id="Zo0-FA-DKq"/>
                             <constraint firstItem="Bqc-Xo-wCY" firstAttribute="top" secondItem="ic8-4g-Y9q" secondAttribute="bottom" constant="16" id="kda-Dh-NZR"/>
-                            <constraint firstItem="Bqc-Xo-wCY" firstAttribute="centerY" secondItem="fVF-LL-uiE" secondAttribute="centerY" id="lDI-Ca-nbZ"/>
                             <constraint firstItem="I0v-ge-r0e" firstAttribute="trailing" secondItem="qcu-32-axx" secondAttribute="trailing" constant="114" id="uYF-fY-ZUZ"/>
                             <constraint firstItem="ic8-4g-Y9q" firstAttribute="leading" secondItem="ELw-9O-amO" secondAttribute="leading" id="vEB-7t-hE0"/>
-                            <constraint firstItem="fVF-LL-uiE" firstAttribute="leading" secondItem="Bqc-Xo-wCY" secondAttribute="trailing" constant="57" id="vrS-UJ-0vj"/>
                             <constraint firstItem="fZA-ue-xq6" firstAttribute="top" secondItem="qcu-32-axx" secondAttribute="top" id="wfk-LX-6e7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I0v-ge-r0e"/>
