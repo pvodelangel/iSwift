@@ -76,5 +76,10 @@ class PerfilView: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
        }
 
   
-
+    @IBAction func buttonUpdateInfo(_ sender: Any) {
+        let alert = UIAlertController(title: "Actualización Éxitosa", message: "Tú información fue Actualizada", preferredStyle: UIAlertController.Style.alert)
+               alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+               self.present(alert, animated: true, completion: nil)
+    }
+    
 }
