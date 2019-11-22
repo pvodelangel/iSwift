@@ -14,13 +14,14 @@ class ActividadesView: UIViewController {
     @IBOutlet weak var nombreActividad: UILabel!
     @IBOutlet weak var descripcionActividad: UITextView!
     @IBOutlet weak var styleButton: UIButton!
-    var imagenActividad:UIImage!
+      
+      var imagenActividad:UIImage!
       var nombreActividades:String!
       var descripcionActividades:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.logoActividad.image = imagenActividad
+        self.logoActividad.image = imagenActividad ?? UIImage(contentsOfFile: "openlab")
         self.nombreActividad.text = nombreActividades
         self.descripcionActividad.text = descripcionActividades
         //Para redondear la imagen

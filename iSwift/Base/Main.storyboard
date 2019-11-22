@@ -91,7 +91,7 @@
                                         </state>
                                         <connections>
                                             <action selector="bottonIniciarSesion:" destination="OuB-6P-P6x" eventType="touchUpInside" id="LTB-6q-Kbu"/>
-                                            <segue destination="DPX-dY-fnh" kind="show" id="duW-lO-8as"/>
+                                            <segue destination="nKo-wZ-FiU" kind="show" id="yOr-SR-Smv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -146,7 +146,7 @@
             <objects>
                 <viewController id="N0j-m2-1U7" customClass="ActividadesView" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gg8-OY-vzR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="I0v-ge-r0e"/>
@@ -382,27 +382,81 @@
             <objects>
                 <viewController id="q8d-jT-8tX" customClass="iOSLabView" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UoO-bl-LbQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qjj-Py-hd8">
+                                <rect key="frame" x="47" y="169" width="320" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHX-wC-db6">
+                                        <rect key="frame" x="220" y="20" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="browser"/>
+                                        <connections>
+                                            <action selector="webButton:" destination="dl0-6n-1Aa" eventType="touchUpInside" id="ekj-7f-PHI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAw-bj-7kc">
+                                        <rect key="frame" x="120" y="20" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="facebook"/>
+                                        <connections>
+                                            <action selector="facebookButton:" destination="dl0-6n-1Aa" eventType="touchUpInside" id="5cL-ta-mV2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxw-TZ-NZc">
+                                        <rect key="frame" x="20" y="20" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="instagram"/>
+                                        <connections>
+                                            <action selector="instagramButton:" destination="dl0-6n-1Aa" eventType="touchUpInside" id="n5l-0L-qp3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Redes Sociales" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QK-Gv-C49">
+                                <rect key="frame" x="26" y="61" width="362" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.54117647059999996" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reglamento" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pg-ga-MFS">
+                                <rect key="frame" x="26" y="334" width="362" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.54117647059999996" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfI-Vp-nB1">
+                                <rect key="frame" x="47" y="414" width="320" height="288"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="jov-f9-0u7" kind="embed" id="qWY-vL-dIP"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1ES-Wc-fcg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="iOS Lab" image="swift" id="0EO-Uu-yeX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6RB-26-oc7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="dl0-6n-1Aa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="906" y="1162"/>
+            <point key="canvasLocation" x="905.79710144927549" y="1161.8303571428571"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="Kkc-wu-weO">
             <objects>
                 <viewController id="Dz5-jQ-AKV" customClass="PerfilView" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zWx-Ea-AEs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1050"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="996"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDW-CK-p17">
-                                <rect key="frame" x="0.0" y="88" width="414" height="879"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="857"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EE2-CP-MCt">
                                         <rect key="frame" x="0.0" y="121" width="414" height="1000"/>
@@ -668,7 +722,7 @@
             <objects>
                 <viewController id="Co3-b7-ZUh" customClass="ConfiguracionView" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0gY-Xj-IIs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpO-e2-UiB">
@@ -689,7 +743,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b32-Zp-qN3">
-                                <rect key="frame" x="40" y="485" width="334" height="45"/>
+                                <rect key="frame" x="40" y="485" width="334" height="99"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.54117647059999996" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="b32-Zp-qN3" secondAttribute="height" multiplier="334:45" id="Xil-IO-6wH"/>
@@ -728,6 +782,7 @@
                     <navigationItem key="navigationItem" title="Cambio de Contraseña" id="i4t-tn-Gkd"/>
                     <connections>
                         <outlet property="nuevaContrasena" destination="sGK-NH-74z" id="TQu-jK-Amj"/>
+                        <outlet property="styleButton" destination="b32-Zp-qN3" id="lia-UC-EeI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9hn-1n-eEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -762,7 +817,7 @@
                     <tabBarItem key="tabBarItem" title="Perfil" image="user" id="8Bv-YZ-lnK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kld-W5-Zwy">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.94117647059999998" green="0.54117647059999996" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -786,7 +841,7 @@
             <objects>
                 <tableViewController id="iNv-kK-5Yx" customClass="RegistroTableViewController" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hLt-zk-4Er">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pLu-zV-KeZ">
@@ -796,6 +851,9 @@
                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Agregar" image="plus" catalog="system"/>
+                            <connections>
+                                <segue destination="7yz-GQ-m0I" kind="show" id="ZRN-hp-oP3"/>
+                            </connections>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="celda" rowHeight="70" id="heA-cL-tX3" userLabel="celda" customClass="RegisterMasterTableViewCell" customModule="iSwift" customModuleProvider="target">
@@ -853,12 +911,22 @@
             </objects>
             <point key="canvasLocation" x="-216" y="-2335"/>
         </scene>
+        <!--QRCode-->
+        <scene sceneID="r9U-ZV-d6M">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QRCode" id="7yz-GQ-m0I" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2WC-1T-Tds"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Thg-g3-pQf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="-2550"/>
+        </scene>
         <!--Registro Actividades-->
         <scene sceneID="s3P-AB-AkC">
             <objects>
                 <tableViewController id="nPs-pB-U81" customClass="ActividadesTableViewController" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NZc-eJ-dFG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WTv-b5-laY">
@@ -920,21 +988,90 @@
             </objects>
             <point key="canvasLocation" x="-216" y="-1529"/>
         </scene>
-        <!--View Controller-->
+        <!--Agregar Actividad View-->
         <scene sceneID="804-r9-OCH">
             <objects>
-                <viewController id="Gqh-2N-xGV" sceneMemberID="viewController">
+                <viewController id="Gqh-2N-xGV" customClass="AgregarActividadView" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RhT-3b-gMy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x5y-u0-YWH">
+                                <rect key="frame" x="40" y="452" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre de la Actividad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFF-oF-o3F">
+                                <rect key="frame" x="40" y="255" width="334" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.54117647059999996" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wg3-yl-gDB">
+                                <rect key="frame" x="40" y="316" width="334" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripción" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWn-JS-DrN">
+                                <rect key="frame" x="40" y="395" width="334" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.54117647059999996" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favicon" translatesAutoresizingMaskIntoConstraints="NO" id="kgB-ax-M6r">
+                                <rect key="frame" x="86" y="60" width="243" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.94117647059999998" green="0.54117647059999996" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pII-Ia-D1y">
+                                <rect key="frame" x="296" y="178" width="33" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.54117647059999996" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="pencil" catalog="system"/>
+                                <connections>
+                                    <action selector="cambioImagen:" destination="Gqh-2N-xGV" eventType="touchUpInside" id="ecH-b5-aId"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIY-GX-FWe">
+                                <rect key="frame" x="40" y="567" width="334" height="45"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.54117647059999996" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DIY-GX-FWe" secondAttribute="height" multiplier="334:45" id="4Mc-8C-wV9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonConfigure:" destination="Co3-b7-ZUh" eventType="touchUpInside" id="goq-bn-AS8"/>
+                                    <action selector="guardarActividad:" destination="Gqh-2N-xGV" eventType="touchUpInside" id="lmq-Ez-7IL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ong-uH-ryI" firstAttribute="bottom" secondItem="DIY-GX-FWe" secondAttribute="bottom" constant="196" id="Fl3-ue-E2J"/>
+                            <constraint firstItem="DIY-GX-FWe" firstAttribute="top" secondItem="x5y-u0-YWH" secondAttribute="bottom" constant="81" id="t6d-Lk-Wbc"/>
+                            <constraint firstItem="Ong-uH-ryI" firstAttribute="trailing" secondItem="DIY-GX-FWe" secondAttribute="trailing" constant="40" id="w3e-p1-d89"/>
+                            <constraint firstItem="DIY-GX-FWe" firstAttribute="leading" secondItem="Ong-uH-ryI" secondAttribute="leading" constant="40" id="yTh-Oi-wqf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ong-uH-ryI"/>
                     </view>
                     <navigationItem key="navigationItem" id="QE7-cW-mSs"/>
+                    <connections>
+                        <outlet property="descripcionActividad" destination="x5y-u0-YWH" id="CUZ-gC-Mw1"/>
+                        <outlet property="nombreActividad" destination="wg3-yl-gDB" id="WLy-LX-oog"/>
+                        <outlet property="styleButtomPencil" destination="pII-Ia-D1y" id="ij6-mB-zuy"/>
+                        <outlet property="stylebutton" destination="DIY-GX-FWe" id="KfO-Z8-yru"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bt-dV-K1e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1380" y="-1860"/>
+            <point key="canvasLocation" x="1378.2608695652175" y="-1860.2678571428571"/>
         </scene>
         <!--Actividades View-->
         <scene sceneID="qk3-IV-4vD">
@@ -1005,14 +1142,32 @@
             </objects>
             <point key="canvasLocation" x="1380" y="-1153"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="67w-5A-1oy">
+            <objects>
+                <viewController id="jov-f9-0u7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MiJ-js-Gw8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="333"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L8q-PI-1Qr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1391" y="1670"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Qr" width="64" height="64"/>
         <image name="Swift_FESA" width="1275" height="1125"/>
+        <image name="browser" width="256" height="256"/>
+        <image name="facebook" width="256" height="256"/>
         <image name="favicon" width="135" height="134"/>
         <image name="folders" width="256" height="256"/>
         <image name="icon" width="32" height="32"/>
+        <image name="instagram" width="256" height="256"/>
         <image name="laptop" width="32" height="32"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
         <image name="plus" catalog="system" width="64" height="56"/>
         <image name="swift" width="32" height="32"/>
         <image name="user" width="32" height="32"/>
