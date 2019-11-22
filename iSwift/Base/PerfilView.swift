@@ -36,6 +36,7 @@ class PerfilView: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
         self.pickerGeneroP.delegate = self as! UIPickerViewDelegate
            self.pickerGeneroP.dataSource = self as! UIPickerViewDataSource
         pickerDataGenero = ["Masculino", "Femenino"]
+        imagenP.image = UIImage(named: "Swift_FESA")
         
     }
     
@@ -66,9 +67,9 @@ class PerfilView: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
             carrera = pickerDataCarrera[row]
         } else {
             if pickerDataGenero[row] == "Femenino" {
-                imagenP.image = UIImage(named: "Mujer")
+                imagenP.image = UIImage(named: "mujer")
             }else{
-                imagenP.image = UIImage(named: "Hombre")
+                imagenP.image = UIImage(named: "hombre")
             }
         }
         
