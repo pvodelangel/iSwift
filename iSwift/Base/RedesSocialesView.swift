@@ -27,15 +27,24 @@ class RedesSocialesView: UIViewController {
     }
     
     @IBAction func instagramButton(_ sender: Any) {
-        openUrl(url: "https://www.instagram.com/cedamiosfesacatlan/")
+
+        if let url = URL(string: "https://www.instagram.com/cedamiosfesacatlan/") {
+            UIApplication.shared.open(url)
+        }
     }
     
     @IBAction func facebookButton(_ sender: Any) {
-        openUrl(url: "https://www.facebook.com/CEDAMIOS/")
+       if let url = URL(string: "https://www.facebook.com/CEDAMIOS/") {
+                  UIApplication.shared.open(url)
+              }
+       
     }
     
     @IBAction func webButton(_ sender: Any) {
-        openUrl(url: "http://www.ioslab.acatlan.unam.mx")
+       if let url = URL(string: "http://www.ioslab.acatlan.unam.mx") {
+           UIApplication.shared.open(url)
+       }
+    
     }
     
 }

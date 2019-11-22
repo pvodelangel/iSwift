@@ -1142,12 +1142,12 @@
             </objects>
             <point key="canvasLocation" x="1380" y="-1153"/>
         </scene>
-        <!--View Controller-->
+        <!--Reglamento View Controller-->
         <scene sceneID="67w-5A-1oy">
             <objects>
-                <viewController id="jov-f9-0u7" sceneMemberID="viewController">
+                <viewController id="jov-f9-0u7" customClass="ReglamentoViewController" customModule="iSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MiJ-js-Gw8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="333"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
