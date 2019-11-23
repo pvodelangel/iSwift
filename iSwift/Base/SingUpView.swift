@@ -52,7 +52,9 @@ class SingUpView: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     }
 
     @IBAction func BotonRegistro(_ sender: Any) {
-        
+        let alert = UIAlertController(title: "Registro Éxitoso", message: "Ya puedes Ingresar al Sistema", preferredStyle: UIAlertController.Style.alert)
+               alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+               self.present(alert, animated: true, completion: nil)
     }
     
 
